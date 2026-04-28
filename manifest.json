@@ -1,0 +1,28 @@
+{
+  "short_name": "OwnTalk",
+  "name": "English Learning App",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "start_url": "https://jangjiyoung.github.io/OwnTalk/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "lang": "ko",
+  "orientation": "portrait-primary",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay"
+  ]
+}
