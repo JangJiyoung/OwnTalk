@@ -1,4 +1,4 @@
-// 260430_플레시 화면변경
+const CACHE_NAME = 'owntalk-v2026-04-30-v2'; // 260430_플레시 화면변경|
 const CACHE_NAME = 'ai-english-pro-v1';
 // 오프라인에서 앱을 띄우기 위해 반드시 저장해야 하는 파일 목록
 const urlsToCache = [
@@ -17,6 +17,7 @@ self.addEventListener('install', event => {
         return cache.addAll(urlsToCache);
       })
   );
+  
 });
 
 // 2. 네트워크 요청 가로채기 (오프라인 동작의 핵심)
