@@ -219,8 +219,8 @@
         input[type=range] { -webkit-appearance: none; width: 130px; background: transparent; }
         input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; height: 20px; width: 20px; border-radius: 50%; background: var(--primary); cursor: pointer; margin-top: -8px; }
         input[type=range]::-webkit-slider-runnable-track { width: 100%; height: 4px; background: #e0e0e0; border-radius: 2px; }
-        .setting-category { font-size: 17px; font-weight: bold; color: var(--primary); margin: 25px 0 15px; border-bottom: 2px solid #f0f0f0; padding-bottom: 8px; }
-        .setting-category:first-of-type { margin-top: 5px; } 
+        .setting- { font-size: 17px; font-weight: bold; color: var(--primary); margin: 25px 0 15px; border-bottom: 2px solid #f0f0f0; padding-bottom: 8px; }
+        .setting-:first-of-type { margin-top: 5px; } 
         .setting-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; font-size: 18px; font-weight: 500; }
 
         .system-popup { width: 85%; max-width: 320px; background: #ffffff; border-radius: 24px; padding: 30px 20px 15px; text-align: center; box-shadow: 0 10px 40px rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; }
@@ -355,14 +355,14 @@
         <div class="modal">
             <div class="modal-header">환경 설정 <button class="btn-x" onclick="closeOverlay('settingModal')">✕</button></div>
             <div class="modal-body">
-                <div class="setting-category">재생 옵션</div>
+                <div class="setting-">재생 옵션</div>
                 <div class="setting-row"><span>문장 Random 재생</span><label class="switch"><input type="checkbox" id="setRandom"><span class="slider"></span></label></div>
                 <div class="setting-row"><span>중요도 우선모드</span><label class="switch"><input type="checkbox" id="setPriority"><span class="slider"></span></label></div>
                 <div class="setting-row"><span>원어민 내 저장음성 우선모드</span><label class="switch"><input type="checkbox" id="setUseSavedVoice"><span class="slider"></span></label></div>
                 <div class="setting-row"><span>원어민 발음 먼저 듣기</span><label class="switch"><input type="checkbox" id="setNativeFirst" checked><span class="slider"></span></label></div>
                 <div class="setting-row"><span>자동 문장 넘김</span><label class="switch"><input type="checkbox" id="setAutoNext"><span class="slider"></span></label></div>
                 <div class="setting-row"><span>내 녹음 바로 재생</span><label class="switch"><input type="checkbox" id="setAutoPlayRec" checked><span class="slider"></span></label></div>
-                <div class="setting-category">학습 환경</div>
+                <div class="setting-">학습 환경</div>
                 <div class="setting-row"><span>학습 문장 수</span><div style="display:flex; align-items:center; gap:10px;"><input type="range" id="setLimit" min="5" max="100" step="5" value="20" oninput="document.getElementById('limitVal').innerText=this.value"><span id="limitVal" style="font-weight:bold; color:var(--primary); width:35px; text-align:right;">20</span></div></div>
                 <div class="setting-row"><span>대기 시간 (초)</span><div style="display:flex; align-items:center; gap:10px;"><input type="range" id="setWaitTime" min="1" max="10" step="1" value="3" oninput="document.getElementById('waitVal').innerText=this.value"><span id="waitVal" style="font-weight:bold; color:var(--primary); width:35px; text-align:right;">3</span></div></div>
             </div>
